@@ -1,0 +1,51 @@
+package com.java.forEach;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ForEachDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		withOutForEach();
+		withForEach();
+	}
+	// Older Imple in project 
+	
+
+		public static void withOutForEach() {
+			
+			
+			System.out.println("without For Each");
+		  
+			
+			List<Integer> inList=Arrays.asList(1,2,3,4,65,78,99,0,89);
+			
+			// older Impl 
+			
+			for(int i: inList) {
+				
+				System.out.println("Output of Collection-->" +i);
+			}
+			
+			
+		}
+		
+
+		// New Way to write in latest framework using java 11 onwards for each 
+		
+		public static void withForEach() {
+			
+		
+			System.out.println("From withForEach");
+
+			List<Integer> inList=Arrays.asList(1,2,3,4,65,78,99,0,89);
+			
+			inList.forEach(System.out::println);
+			
+
+		}
+		
+
+}

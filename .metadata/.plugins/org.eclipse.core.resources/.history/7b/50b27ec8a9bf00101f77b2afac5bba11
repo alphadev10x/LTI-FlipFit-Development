@@ -1,0 +1,15 @@
+package com.java.default1;
+
+public class ClientCal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CalculatorInterface indian = new IndianCalculator();
+		System.out.println();
+		
+		CalculatorInterface chinese = new ChineseCalculator();
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.java.default1;
+
+public class ChineseCalculator implements CalculatorInterface {
+
+	@Override
+	public double substract(int a, int b) {
+		// TODO Auto-generated method stub
+		return a-b;
+	}
+
+	@Override
+	public double multiply(int a, int b) {
+		// TODO Auto-generated method stub
+		return a*b;
+	}
+
+	@Override
+	public double divide(int a, int b) {
+		// TODO Auto-generated method stub
+		return a/b;
+	}
+
+}
